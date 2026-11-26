@@ -1,7 +1,93 @@
-.booking-page{background:#f4f7fb;min-height:80vh;padding-bottom:64px}.booking-workspace{padding-top:28px}.back-home{display:inline-block;color:#45617e;font-size:14px;padding:8px 0}.booking-workspace>h1{color:#102a43;font-size:32px;letter-spacing:-1px;margin:12px 0 24px}.booking-progress{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:32px}.booking-progress button{display:flex;align-items:center;gap:10px;border:0;border-bottom:3px solid #d9e2ef;background:transparent;padding:14px 8px;color:#45617e;text-align:left;font-size:14px}.booking-progress button span{display:grid;place-items:center;width:28px;height:28px;flex:none;background:#e3eaf4;border-radius:50%;font-weight:700}.booking-progress button[aria-current=step]{border-color:#2861ed;color:#174bd1;font-weight:700}.booking-progress button[aria-current=step] span{color:white;background:#2861ed}.booking-progress button:disabled{color:#697b90}.booking-content{min-width:0}.booking-content h2{margin:0;font-size:25px}.step-help{color:#526c8a;line-height:1.6;margin:10px 0 24px}.booking-content .route-options{border:0;padding:0}.booking-content .route-panel{padding:26px}.booking-content [hidden]{display:none!important}.booking-content .event-fields{margin-top:24px}.booking-summary{position:sticky;top:24px;align-self:start}.booking-catalog>.section{padding:0}.booking-catalog .section-heading{margin-bottom:20px}.booking-catalog .section-heading .eyebrow,.booking-catalog .section-heading>p{display:none}.booking-catalog .cars{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.booking-catalog .car-image{height:170px}.booking-catalog .filters{flex-wrap:wrap}.booking-catalog .catalog-note{display:none}.booking-catalog .car-body{padding:16px}.booking-catalog .car-body>p{flex-wrap:wrap}.booking-catalog .car-body>p>span{margin-left:0}.booking-catalog .car-bottom b{font-size:16px}.booking-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:24px}.secondary{background:white;border:1px solid #d5e1f0;color:#315477}.review-details{margin:24px 0;line-height:1.5}.review-details>div{border-top:1px solid #dfe6ef;padding-top:16px;margin-top:16px}.review-details p{color:#45617e;overflow-wrap:anywhere}.review-form{display:grid;gap:18px}.review-form label{display:grid;gap:8px}.review-form input{width:100%;min-width:0;padding:13px;border:1px solid #cbd9e9;border-radius:6px;background:#f8faff}.review-form .notice{margin:0}.location-editor{position:relative}.editor-close{display:flex;align-items:center;gap:8px;margin:20px 0 0 auto}.mobile-booking-total{display:none}.home-booking{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-bottom:45px}.home-booking p{color:#526c8a}.booking-summary .summary-car h3{font-size:16px}.booking-content .error{padding:12px;background:#fff0ed;border-radius:8px}
-@media(max-width:760px){.booking-workspace{padding:20px 16px 0}.booking-progress{gap:4px;margin-bottom:24px}.booking-progress button{flex-direction:column;align-items:flex-start;padding:10px 4px;font-size:12px;gap:8px}.booking-workspace>h1{font-size:28px}.booking-page .booking-grid{grid-template-columns:1fr;gap:24px}.booking-content .route-panel{padding:20px 16px}.booking-summary{position:static}.booking-actions{justify-content:space-between}.booking-actions>.primary{display:none}.mobile-booking-total{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:900;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:white;border-top:1px solid #dfe6ef;box-shadow:0 -4px 20px #1634520a;align-items:center;justify-content:space-between;gap:12px}.mobile-booking-total>span{font-size:12px;display:grid;gap:4px;color:#526c8a}.mobile-booking-total b{font-size:15px;color:#102a43}.mobile-booking-total .button{padding:12px 18px}.booking-page{padding-bottom:110px}.booking-catalog .cars{grid-template-columns:1fr}.booking-catalog .car-image{height:210px}.booking-catalog .section-heading h2{font-size:24px}.location-editor:not([hidden]){position:fixed;inset:0;z-index:1200;overflow:auto;overscroll-behavior:contain;background:white;padding:16px;padding-bottom:calc(24px + env(safe-area-inset-bottom))}.location-editor .editor-close{margin:0 0 12px auto;min-height:44px}.location-editor .location-map-shell{height:40dvh;min-height:230px}.location-editor .location-picker{margin-top:0}.home-booking{flex-direction:column;align-items:flex-start}.booking-page .summary{padding:20px}.booking-page .route-fields{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.booking-progress{position:static;width:auto;background:transparent;box-shadow:none;z-index:auto}.booking-catalog>.section{margin:0}.booking-workspace .booking-grid{grid-template-columns:minmax(0,1.7fr) minmax(290px,1fr)}
-@media(max-width:760px){.booking-workspace{margin:0}.booking-workspace .booking-grid{grid-template-columns:minmax(0,1fr)}.booking-progress{display:grid;position:static;padding:0}.booking-summary{margin-bottom:0}}
-.how .steps{grid-template-columns:repeat(4,minmax(0,1fr))}.car-select:disabled{opacity:.5;cursor:default}
-@media(max-width:760px){.how .steps{grid-template-columns:1fr}}
+.booking-page{min-height:80vh;padding-bottom:40px;background:var(--alt)}
+.booking-workspace{padding-top:32px}
+.back-home{display:inline-flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;font-weight:600;color:var(--muted)}
+.back-home:hover{color:var(--text)}
+.booking-workspace>h1{margin:8px 0 28px;font-size:clamp(30px,3.4vw,42px);color:var(--text)}
+
+/* Progress */
+.booking-progress{counter-reset:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:32px}
+.booking-progress button{display:flex;align-items:center;gap:12px;min-width:0;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:#fff;color:var(--muted);font-size:14px;font-weight:600;text-align:start;transition:border-color .2s,background .2s}
+.booking-progress button span{display:grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%;background:var(--canvas);font-weight:800;font-size:13px}
+.booking-progress button:not(:disabled):not([aria-current]){color:var(--text)}
+.booking-progress button:not(:disabled):not([aria-current]) span{background:var(--gold-soft);color:var(--accent)}
+.booking-progress button:not(:disabled):hover{border-color:#c8ccd3}
+.booking-progress button[aria-current=step]{border-color:var(--ink);background:var(--ink);color:#fff}
+.booking-progress button[aria-current=step] span{background:#fff;color:var(--ink)}
+.booking-progress button:disabled{opacity:.7}
+
+.booking-workspace .booking-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:28px;align-items:start}
+.booking-content{min-width:0}
+.booking-content [hidden]{display:none!important}
+.booking-content h2{margin:0;font-size:26px}
+.step-help{margin:8px 0 24px;color:var(--muted);line-height:1.6}
+.booking-content .route-options{padding:0;border:0}
+.booking-content .error{margin:16px 0 0;padding:12px 14px;border-radius:12px;background:#fdf0ed}
+.booking-actions{position:sticky;bottom:16px;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding:12px;border:1px solid var(--border);border-radius:16px;background:#ffffffeb;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 18px 40px -24px #0b1a2c55}
+.booking-actions .button{min-width:150px}
+.booking-actions>.primary{margin-inline-start:auto}
+.booking-actions>.primary::after{content:'';width:8px;height:8px;border-top:2px solid currentColor;border-inline-end:2px solid currentColor;transform:rotate(45deg)}
+[dir=rtl] .booking-actions>.primary::after{transform:rotate(-45deg)}
+.booking-actions>.secondary::before{content:'';width:8px;height:8px;border-bottom:2px solid currentColor;border-inline-start:2px solid currentColor;transform:rotate(45deg)}
+[dir=rtl] .booking-actions>.secondary::before{transform:rotate(-45deg)}
+.booking-summary{position:sticky;top:96px;align-self:start}
+.booking-summary .summary-car h3{font-size:16px}
+
+/* Car step */
+.booking-catalog>.section{width:auto;margin:0;padding:0}
+.booking-catalog .section-heading{margin-bottom:18px}
+.booking-catalog .section-heading .eyebrow,.booking-catalog .section-heading>p,.booking-catalog .catalog-note{display:none}
+.booking-catalog .section-heading h2{margin:0}
+.booking-catalog .cars{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.booking-catalog .car-body{padding:16px 18px 18px}
+.booking-catalog .car-bottom b{font-size:18px}
+
+/* Review step */
+.review-details{margin:22px 0;padding:20px;border-radius:14px;background:var(--canvas);line-height:1.5}
+.review-details h3{font-size:16px}
+.review-details>p{margin:6px 0 0;font-weight:700}
+.review-details>div{margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}
+.review-details p{color:var(--muted);overflow-wrap:anywhere}
+.review-details .car-select{margin-top:14px}
+.review-form{display:grid;gap:18px}
+.review-form label{display:grid;gap:8px;font-size:14px;font-weight:700}
+.review-form input{width:100%;min-width:0;min-height:50px;padding:12px 14px;border:1px solid var(--border);border-radius:var(--radius-sm);background:#fff;font-size:16px;font-weight:500}
+.review-form input:focus{border-color:var(--ink)}
+.review-form .notice{margin:0}
+
+/* Exact locations */
+.location-editor{position:relative}
+.editor-close{margin:20px 0 0 auto}
+[dir=rtl] .editor-close{margin:20px auto 0 0}
+
+.booking-empty{display:grid;justify-items:start;gap:12px}
+.booking-empty>svg{width:48px;height:48px;padding:12px;border-radius:14px;background:var(--gold-soft);color:var(--accent)}
+.booking-empty h3,.booking-empty p{margin:0}
+.booking-empty p{color:var(--muted);line-height:1.6}
+
+.mobile-booking-total{display:none}
+
+@media(max-width:1000px){
+  .booking-workspace .booking-grid{grid-template-columns:minmax(0,1fr)}
+  .booking-summary{position:static}
+  .booking-progress button{flex-direction:column;align-items:flex-start;gap:8px;padding:12px}
+}
+@media(max-width:760px){
+  .booking-workspace{padding-top:16px}
+  .booking-progress{gap:6px;margin-bottom:22px}
+  .booking-progress button{padding:10px 8px;font-size:12px;border-radius:12px}
+  .booking-progress button span{width:26px;height:26px}
+  .booking-catalog .cars{grid-template-columns:1fr}
+  .booking-actions{position:static;padding:0;border:0;background:none;box-shadow:none;backdrop-filter:none}
+  .booking-actions .button{min-width:0}
+  .booking-actions>.primary{display:none}
+  .mobile-booking-total{position:fixed;inset-inline:0;bottom:0;z-index:900;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--border);box-shadow:0 -10px 30px -12px #0b1a2c26}
+  .mobile-booking-total>span{display:grid;gap:2px;font-size:12px;color:var(--muted)}
+  .mobile-booking-total b{font-size:16px;color:var(--text)}
+  .mobile-booking-total .button{min-height:46px;padding:12px 20px}
+  .booking-page{padding-bottom:110px}
+  .location-editor:not([hidden]){position:fixed;inset:0;z-index:1200;overflow:auto;overscroll-behavior:contain;padding:16px;padding-bottom:calc(24px + env(safe-area-inset-bottom));background:#fff}
+  .location-editor .editor-close{margin:0 0 12px auto;min-height:44px}
+  [dir=rtl] .location-editor .editor-close{margin:0 auto 12px 0}
+  .location-editor .location-map-shell{height:40dvh;min-height:230px}
+  .location-editor .location-picker{margin-top:0}
+}

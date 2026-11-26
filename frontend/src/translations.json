@@ -232,7 +232,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "Address search is not configured yet. Select from the map or via GPS.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "Address search is temporarily down. Try again.",
   "so‘m / dona": "UZS per car",
-  "Til": "Language"
+  "Til": "Language",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "Chauffeur-driven cars for weddings, guests and business trips.",
+  "XIZMATLARIMIZ": "OUR SERVICES",
+  "Har bir safar uchun munosib avtomobil": "The right car for every journey",
+  "To‘y va tantanalar": "Weddings and celebrations",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "From the wedding cortege to welcoming guests — cars in one matching style.",
+  "Mehmonlar va sayyohlar": "Guests and travellers",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "For visitors to Xorazm: airport, railway station, Khiva and Urgench with a driver.",
+  "Biznes va delegatsiyalar": "Business and delegations",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "Reliable, punctual service for meetings, partners and official visits."
  },
  "ru": {
   "Yo‘nalish va sana": "Маршрут и дата",
@@ -467,7 +476,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "Поиск адреса еще не настроен. Выбирайте по карте или через GPS.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "Поиск адреса временно отключен. Попробуйте еще раз.",
   "so‘m / dona": "сум за машину",
-  "Til": "Язык"
+  "Til": "Язык",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "Автомобили с водителем для свадеб, гостей и деловых поездок.",
+  "XIZMATLARIMIZ": "НАШИ УСЛУГИ",
+  "Har bir safar uchun munosib avtomobil": "Достойный автомобиль для любой поездки",
+  "To‘y va tantanalar": "Свадьбы и торжества",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "От свадебного кортежа до встречи гостей — автомобили в едином стиле.",
+  "Mehmonlar va sayyohlar": "Гости и туристы",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "Для гостей Хорезма: аэропорт, вокзал, Хива и Ургенч с водителем.",
+  "Biznes va delegatsiyalar": "Бизнес и делегации",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "Надёжное и пунктуальное обслуживание для встреч, партнёров и официальных визитов."
  },
  "ar": {
   "Yo‘nalish va sana": "الطريق والتاريخ",
@@ -702,7 +720,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "لم يتم تكوين البحث عن عنوان بعد. اختر من الخريطة أو عبر GPS.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "البحث عن العنوان معطل مؤقتًا. حاول ثانية.",
   "so‘m / dona": "UZS لكل سيارة",
-  "Til": "لغة"
+  "Til": "لغة",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "سيارات مع سائق لحفلات الزفاف والضيوف ورحلات العمل.",
+  "XIZMATLARIMIZ": "خدماتنا",
+  "Har bir safar uchun munosib avtomobil": "السيارة المناسبة لكل رحلة",
+  "To‘y va tantanalar": "الأعراس والاحتفالات",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "من موكب العرس إلى استقبال الضيوف — سيارات بأسلوب واحد متناسق.",
+  "Mehmonlar va sayyohlar": "الضيوف والسياح",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "لزوار خوارزم: المطار ومحطة القطار وخيوة وأورگنج مع سائق.",
+  "Biznes va delegatsiyalar": "الأعمال والوفود",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "خدمة موثوقة ودقيقة في المواعيد للاجتماعات والشركاء والزيارات الرسمية."
  },
  "zh": {
   "Yo‘nalish va sana": "路线和日期",
@@ -937,7 +964,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "地址搜索尚未配置。从地图或通过 GPS 选择。",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "地址搜索暂时停止。再试一次。",
   "so‘m / dona": "每辆车 UZS",
-  "Til": "语言"
+  "Til": "语言",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "为婚礼、宾客和商务出行提供带司机的用车服务。",
+  "XIZMATLARIMIZ": "我们的服务",
+  "Har bir safar uchun munosib avtomobil": "每一段行程都有合适的车",
+  "To‘y va tantanalar": "婚礼与庆典",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "从婚礼车队到迎接宾客——风格统一的车辆。",
+  "Mehmonlar va sayyohlar": "宾客与游客",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "面向到访花剌子模的客人：机场、火车站、希瓦和乌尔根奇，配有司机。",
+  "Biznes va delegatsiyalar": "商务与代表团",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "为会议、合作伙伴和正式访问提供可靠、准时的服务。"
  },
  "ko": {
   "Yo‘nalish va sana": "경로 및 날짜",
@@ -1172,7 +1208,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "주소 검색이 아직 구성되지 않았습니다. 지도에서 선택하거나 GPS를 통해 선택하세요.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "주소 검색이 일시적으로 중단되었습니다. 다시 시도해 보세요.",
   "so‘m / dona": "차량당 UZS",
-  "Til": "언어"
+  "Til": "언어",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "결혼식, 손님 맞이, 출장을 위한 기사 포함 차량.",
+  "XIZMATLARIMIZ": "서비스",
+  "Har bir safar uchun munosib avtomobil": "모든 여정에 어울리는 차량",
+  "To‘y va tantanalar": "결혼식과 축하 행사",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "웨딩 카퍼레이드부터 손님 맞이까지 — 통일된 스타일의 차량.",
+  "Mehmonlar va sayyohlar": "손님과 여행객",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "호레즘 방문객을 위해: 공항, 기차역, 히바와 우르겐치까지 기사와 함께.",
+  "Biznes va delegatsiyalar": "비즈니스와 대표단",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "회의, 파트너, 공식 방문을 위한 믿을 수 있고 시간을 지키는 서비스."
  },
  "fr": {
   "Yo‘nalish va sana": "Itinéraire et date",
@@ -1407,7 +1452,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "La recherche d'adresse n'est pas encore configurée. Sélectionnez sur la carte ou via GPS.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "La recherche d'adresse est temporairement indisponible. Essayer à nouveau.",
   "so‘m / dona": "UZS par voiture",
-  "Til": "Langue"
+  "Til": "Langue",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "Voitures avec chauffeur pour mariages, invités et voyages d’affaires.",
+  "XIZMATLARIMIZ": "NOS SERVICES",
+  "Har bir safar uchun munosib avtomobil": "La bonne voiture pour chaque trajet",
+  "To‘y va tantanalar": "Mariages et célébrations",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "Du cortège nuptial à l’accueil des invités — des voitures assorties.",
+  "Mehmonlar va sayyohlar": "Invités et voyageurs",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "Pour les visiteurs du Khorezm : aéroport, gare, Khiva et Ourguentch avec chauffeur.",
+  "Biznes va delegatsiyalar": "Affaires et délégations",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "Un service fiable et ponctuel pour réunions, partenaires et visites officielles."
  },
  "es": {
   "Yo‘nalish va sana": "Ruta y fecha",
@@ -1642,7 +1696,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "La búsqueda de direcciones aún no está configurada. Seleccione desde el mapa o vía GPS.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "La búsqueda de direcciones está temporalmente inactiva. Intentar otra vez.",
   "so‘m / dona": "UZS por coche",
-  "Til": "Idioma"
+  "Til": "Idioma",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "Coches con conductor para bodas, invitados y viajes de negocios.",
+  "XIZMATLARIMIZ": "NUESTROS SERVICIOS",
+  "Har bir safar uchun munosib avtomobil": "El coche adecuado para cada trayecto",
+  "To‘y va tantanalar": "Bodas y celebraciones",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "Desde el cortejo nupcial hasta la recepción de invitados: coches de un mismo estilo.",
+  "Mehmonlar va sayyohlar": "Invitados y viajeros",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "Para quienes visitan Corasmia: aeropuerto, estación, Jiva y Urgench con conductor.",
+  "Biznes va delegatsiyalar": "Negocios y delegaciones",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "Servicio fiable y puntual para reuniones, socios y visitas oficiales."
  },
  "hi": {
   "Yo‘nalish va sana": "रूट और तारीख",
@@ -1877,7 +1940,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "पता खोज अभी तक कॉन्फ़िगर नहीं की गई है. मानचित्र से या जीपीएस के माध्यम से चयन करें।",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "पता खोज अस्थायी रूप से बंद है. पुनः प्रयास करें।",
   "so‘m / dona": "प्रति कार यूजेडएस",
-  "Til": "भाषा"
+  "Til": "भाषा",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "शादियों, मेहमानों और व्यावसायिक यात्राओं के लिए ड्राइवर सहित कारें।",
+  "XIZMATLARIMIZ": "हमारी सेवाएँ",
+  "Har bir safar uchun munosib avtomobil": "हर यात्रा के लिए सही कार",
+  "To‘y va tantanalar": "शादियाँ और समारोह",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "शादी के काफ़िले से लेकर मेहमानों के स्वागत तक — एक जैसी शैली की कारें।",
+  "Mehmonlar va sayyohlar": "मेहमान और पर्यटक",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "ख़ोरज़्म आने वालों के लिए: हवाई अड्डा, रेलवे स्टेशन, ख़ीवा और उर्गेंच ड्राइवर के साथ।",
+  "Biznes va delegatsiyalar": "व्यवसाय और प्रतिनिधिमंडल",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "बैठकों, साझेदारों और आधिकारिक दौरों के लिए भरोसेमंद और समय पर सेवा।"
  },
  "pl": {
   "Yo‘nalish va sana": "Trasa i data",
@@ -2112,7 +2184,16 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "Wyszukiwanie adresów nie zostało jeszcze skonfigurowane. Wybierz z mapy lub przez GPS.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "Wyszukiwanie adresów jest chwilowo wyłączone. Spróbuj ponownie.",
   "so‘m / dona": "UZS za samochód",
-  "Til": "Język"
+  "Til": "Język",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "Samochody z kierowcą na wesela, dla gości i w podróżach służbowych.",
+  "XIZMATLARIMIZ": "NASZE USŁUGI",
+  "Har bir safar uchun munosib avtomobil": "Odpowiedni samochód na każdą podróż",
+  "To‘y va tantanalar": "Wesela i uroczystości",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "Od orszaku weselnego po powitanie gości — samochody w jednym stylu.",
+  "Mehmonlar va sayyohlar": "Goście i turyści",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "Dla odwiedzających Chorezm: lotnisko, dworzec, Chiwa i Urgencz z kierowcą.",
+  "Biznes va delegatsiyalar": "Biznes i delegacje",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "Niezawodna i punktualna obsługa spotkań, partnerów i wizyt oficjalnych."
  },
  "tr": {
   "Yo‘nalish va sana": "Rota ve tarih",
@@ -2347,6 +2428,15 @@
   "Manzil qidiruvi hali sozlanmagan. Xaritadan yoki GPS orqali tanlang.": "Adres arama henüz yapılandırılmadı. Haritadan veya GPS aracılığıyla seçin.",
   "Manzil qidiruvi vaqtincha ishlamayapti. Qayta urinib ko‘ring.": "Adres arama geçici olarak kapalı. Tekrar deneyin.",
   "so‘m / dona": "Araç başına UZS",
-  "Til": "Dil"
+  "Til": "Dil",
+  "To‘ylar, mehmonlar va biznes safarlari uchun haydovchili avtomobillar.": "Düğünler, misafirler ve iş seyahatleri için şoförlü araçlar.",
+  "XIZMATLARIMIZ": "HİZMETLERİMİZ",
+  "Har bir safar uchun munosib avtomobil": "Her yolculuğa yakışan araç",
+  "To‘y va tantanalar": "Düğünler ve kutlamalar",
+  "Kelin-kuyov kortejidan mehmonlarni kutib olishgacha — bir uslubdagi avtomobillar.": "Gelin konvoyundan misafir karşılamaya — tek tarzda araçlar.",
+  "Mehmonlar va sayyohlar": "Misafirler ve gezginler",
+  "Xorazmga kelganlar uchun: aeroport, vokzal, Xiva va Urganch bo‘ylab haydovchi bilan.": "Harezm’e gelenler için: havalimanı, tren garı, Hive ve Ürgenç şoförle.",
+  "Biznes va delegatsiyalar": "İş ve heyetler",
+  "Uchrashuvlar, hamkorlar va rasmiy tashriflar uchun ishonchli va o‘z vaqtida xizmat.": "Toplantılar, ortaklar ve resmi ziyaretler için güvenilir ve dakik hizmet."
  }
 }

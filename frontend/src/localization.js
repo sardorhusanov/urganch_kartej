@@ -30,6 +30,10 @@ export function translate(value) {
   return typeof translated === 'string' ? value.replace(key, () => translated) : value;
 }
 
+export function routeArrow() {
+  return document.documentElement.dir === 'rtl' ? '←' : '→';
+}
+
 export function orderCars(order) {
   return order.localizedCars?.[language] || order.carName;
 }

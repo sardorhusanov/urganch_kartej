@@ -2,3 +2,8 @@ export const languages = {
   uz: 'O‘zbekcha', en: 'English', ru: 'Русский', ar: 'العربية', zh: '中文',
   ko: '한국어', fr: 'Français', es: 'Español', hi: 'हिन्दी', pl: 'Polski', tr: 'Türkçe',
 };
+
+export const flags = {
+  uz: '🇺🇿', en: '🇬🇧', ru: '🇷🇺', ar: '🇸🇦', zh: '🇨🇳',
+  ko: '🇰🇷', fr: '🇫🇷', es: '🇪🇸', hi: '🇮🇳', pl: '🇵🇱', tr: '🇹🇷',
+};
