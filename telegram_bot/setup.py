@@ -31,9 +31,9 @@ def main():
         client.safe('setMyCommands', commands=ADMIN_COMMANDS, scope={'type': 'chat', 'chat_id': admin})
     client.call('setChatMenuButton', menu_button={'type': 'web_app', 'text': 'Ilova', 'web_app': {'url': url}})
     client.call('setMyDescription', description=(
-        'Urganch Kartej — Xorazm bo‘ylab haydovchili avtomobillar: to‘ylar, mehmonlar va biznes safarlari. '
+        'Urganch Kartej — Xorazm bo‘ylab kartej xizmatlari: to‘ylar, mehmonlar va biznes safarlari. '
         'Ilovada avtomobil tanlang, buyurtma va zaklat holatini shu yerda kuzating.'))
-    client.call('setMyShortDescription', short_description='Xorazm bo‘ylab haydovchili avtomobillar')
+    client.call('setMyShortDescription', short_description='Xorazm bo‘ylab kartej xizmatlari')
     print(f'@{me["username"]} is ready: webhook {url}/api/telegram/webhook, admins {sorted(config.admin_ids()) or "none"}')
 
 

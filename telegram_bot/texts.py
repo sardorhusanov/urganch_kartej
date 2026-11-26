@@ -98,7 +98,7 @@ def prices(cars, places):
 def welcome(first_name, admin):
     name = escape(first_name or 'mehmon')
     text = (f'Assalomu alaykum, {name}! 👋\n\n'
-            '<b>Urganch Kartej</b> — Xorazm bo‘ylab haydovchili avtomobillar: to‘ylar, mehmonlar va biznes safarlari uchun.\n\n'
+            '<b>Urganch Kartej</b> — Xorazm bo‘ylab kartej xizmatlari: to‘ylar, mehmonlar va biznes safarlari uchun.\n\n'
             f'• {BTN_BOOK} — ilovada avtomobil va yo‘nalishni tanlang\n'
             f'• {BTN_MY_ORDERS} — buyurtma va zaklat holati\n'
             f'• {BTN_PRICES} — avtomobillar narxi\n'
