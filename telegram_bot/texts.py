@@ -61,7 +61,7 @@ def order_card(order, admin=False, title=None):
         lines.append(f'<b>{escape(title)}</b>')
     lines.append(f'🧾 <b>{escape(short_ref(order))}</b> · {RECEIPT_LABELS.get(status, status)}')
     if admin:
-        lines.append(f'👤 {escape(order.get("customerName", ""))} · {escape(order.get("phone", ""))}')
+        lines.append(f'👤 {escape(order.get("customerName", ""))} · <code>{escape(order.get("phone", ""))}</code>')
         telegram = order.get('telegram') or {}
         if telegram.get('username'):
             lines.append(f'💬 @{escape(telegram["username"])}')
@@ -112,8 +112,9 @@ def welcome(first_name, admin):
 
 
 def contact():
-    return (f'📞 <b>Aloqa</b>\n\nTelefon: {PHONE}\nInstagram: {INSTAGRAM}\n\n'
-            'Savollaringiz bo‘lsa, qo‘ng‘iroq qiling yoki shu yerga yozing.')
+    # <code> makes the number copy with one tap in Telegram.
+    return (f'📞 <b>Aloqa</b>\n\nTelefon: <code>{PHONE}</code>\nInstagram: {INSTAGRAM}\n\n'
+            'Raqamni nusxalash uchun ustiga bosing. Savollaringiz bo‘lsa, qo‘ng‘iroq qiling yoki shu yerga yozing.')
 
 
 RECEIPT_PROMPT_TAG = 'Chek:'

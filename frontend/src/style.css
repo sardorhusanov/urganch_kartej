@@ -320,7 +320,10 @@ img[src="/images/malibu-black.jpg"]{object-position:center 82%}
   .hero{min-height:0;align-items:flex-end}
   .hero{margin-top:-65px;min-height:clamp(560px,92svh,760px)}
   .hero-inner{padding:180px 0 48px}
-  .hero-media img{object-position:68% 50%}
+  /* Phones: show the photo as a wide band on top (front SUV and chauffeur), fading into the text below. */
+  .hero-media{bottom:auto;height:min(66svh,540px)}
+  .hero-media img{object-position:90% 62%}
+  .hero-media::after,[dir=rtl] .hero-media::after{background:linear-gradient(180deg,#0f1b25b3 0%,transparent 26%),linear-gradient(0deg,var(--night) 0%,#0f1b25cc 22%,#0f1b2533 55%,transparent 75%)}
   .hero-copy>p{font-size:16px}
   .hero-actions{gap:18px}
   .hero-actions .button{width:100%}
