@@ -51,6 +51,10 @@ def on_message(message):
 
     command = text.split()[0].split('@')[0].lower() if text.startswith('/') else text
     if command in ('/start', '/help', '/menu'):
+        if admin:
+            # Admin commands can only be scoped to a chat after the admin has started the bot.
+            from .setup import ADMIN_COMMANDS
+            client.safe('setMyCommands', commands=ADMIN_COMMANDS, scope={'type': 'chat', 'chat_id': chat_id})
         send(chat_id, texts.welcome(user.get('first_name'), admin), keyboards.main_menu(admin))
     elif command == '/id':
         send(chat_id, f'Sizning Telegram ID: <code>{user["id"]}</code>')
