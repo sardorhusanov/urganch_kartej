@@ -24,6 +24,9 @@ from .routing import router as routing_router
 from .locations import router as locations_router, ExactLocation, confirmed_location
 from .geography import classify
 from .storage import open_database
+from telegram_bot import notify as telegram_notify
+from telegram_bot.router import router as telegram_router
+from telegram_bot.webapp_auth import validate_init_data
 from starlette.concurrency import run_in_threadpool
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -102,6 +105,7 @@ async def lifespan(app):
 app = FastAPI(title="Urganch Kartej", lifespan=lifespan)
 app.include_router(routing_router)
 app.include_router(locations_router)
+app.include_router(telegram_router)
 
 
 @app.middleware("http")
@@ -149,12 +153,17 @@ def login(body: Login):
     password_matches = hmac.compare_digest(digest(body.password), app.state.password_digest)
     if not (username_matches and password_matches):
         raise HTTPException(401, "Incorrect username or password")
+    return {"token": create_session()}
+
+
+def create_session():
+    """Eight-hour admin session; shared by password login and Telegram Mini App login."""
     token = secrets.token_urlsafe(32)
     now = int(time.time())
     with database() as db:
         db.execute("DELETE FROM sessions WHERE expires <= ?", (now,))
         db.execute("INSERT INTO sessions VALUES (?, ?)", (digest(token), now + 8 * 3600))
-    return {"token": token}
+    return token
 
 
 @app.delete("/api/admin/session", status_code=204)
@@ -365,8 +374,11 @@ def update_route(car_id: str, body: RoutePrice):
     return car
 
 
+TelegramInitData = Annotated[str | None, Header(alias="X-Telegram-Init-Data", max_length=4096)]
+
+
 @app.post("/api/orders", status_code=201)
-def create_order(body: Booking):
+def create_order(body: Booking, telegram_init: TelegramInitData = None):
     if (body.exactStart is None) != (body.exactEnd is None):
         raise HTTPException(422, 'Boshlanish va borish manzillarini tasdiqlang.')
     exact_start = confirmed_location(body.exactStart) if body.exactStart else None
@@ -413,7 +425,13 @@ def create_order(body: Booking):
                  "end": {**end, "classification": classify(end['lat'], end['lng'])},
                  "exactStart": exact_start, "exactEnd": exact_end, "total": total, "deposit": deposit, "paid": 0,
                  "trackingHash": digest(tracking_token)}
+        telegram_user = validate_init_data(telegram_init) if telegram_init else None
+        if telegram_user:
+            # Orders placed inside the Telegram Mini App can be tracked and updated in the bot chat.
+            order["telegram"] = {"userId": telegram_user["id"], "firstName": telegram_user.get("first_name", ""),
+                                 "username": telegram_user.get("username", "")}
         write_one(db, "orders", order)
+    telegram_notify.order_created(order)
     return {**tracking_summary(order), "trackingToken": tracking_token}
 
 
@@ -453,16 +471,23 @@ def upload_receipt(order_id: str, response: Response, photo: Annotated[UploadFil
     with database() as db:
         tracked_order(db, order_id, token)
     image = encode_photo(photo)
+    order = save_receipt(order_id, image, lambda db: tracked_order(db, order_id, token))
+    telegram_notify.receipt_uploaded(order, image)
+    return tracking_summary(order)
+
+
+def save_receipt(order_id, image, authorize):
+    """Store a pending receipt; `authorize(db)` returns the order or raises (website token or Telegram owner)."""
     with database() as db:
         db.execute("BEGIN IMMEDIATE")
-        order = tracked_order(db, order_id, token)
+        order = authorize(db)
         if order.get("receipt", {}).get("status") in {"pending", "approved"}:
             raise HTTPException(409, "Bu buyurtma uchun chek allaqachon yuborilgan.")
         order["receipt"] = {"id": uuid4().hex, "status": "pending", "submittedAt": datetime.now(TASHKENT).isoformat()}
         db.execute("INSERT INTO receipts VALUES (?, ?) ON CONFLICT(order_id) DO UPDATE SET data = excluded.data",
                    (order_id, image))
         write_one(db, "orders", order)
-    return tracking_summary(order)
+    return order
 
 
 @app.get("/api/admin/orders/{order_id}/receipt", dependencies=[Admin])
@@ -497,6 +522,7 @@ def review_receipt(order_id: str, body: ReceiptDecision):
         if body.status == "approved":
             order["paid"] = max(order["paid"], order["deposit"])
         write_one(db, "orders", order)
+    telegram_notify.receipt_reviewed(order)
     return admin_summary(order)
 
 

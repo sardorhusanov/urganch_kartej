@@ -9,6 +9,7 @@ React customer site and FastAPI admin dashboard for chauffeur-driven event booki
 - `pyproject.toml` and `uv.lock`: backend dependencies and their locked versions.
 - `.venv/`: backend virtual environment managed by uv (not committed).
 - `api/`: Vercel Python entry point.
+- `telegram_bot/`: Telegram bot and Mini App integration, served by the backend through a webhook. See [its README](telegram_bot/README.md) for setup.
 - `vercel.json`: deployment configuration, with the project root kept at this directory.
 
 ## Run locally

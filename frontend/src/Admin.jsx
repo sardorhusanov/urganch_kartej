@@ -4,6 +4,7 @@ import {CalendarDays, CarFront, ChevronDown, CreditCard, MapPin, Plus} from 'luc
 import {categories} from './catalog';
 import {money} from './pricing';
 import {api, getToken, setToken} from './api';
+import {inTelegram, telegramInitData} from './telegram';
 import './admin.css';
 import VehiclePricing from './VehiclePricing';
 import ReceiptReview from './ReceiptReview';
@@ -124,7 +125,15 @@ function Order({order, onPayment, onReview}) {
 
 function AdminLogin({onLogin}) {
   const [error, setError] = useState('');
-  const [saving, setSaving] = useState(false);
+  const [saving, setSaving] = useState(inTelegram);
+  // Inside the Telegram Mini App, admins listed on the server sign in with their Telegram account.
+  useEffect(() => {
+    if (!inTelegram) return;
+    api('/telegram/admin-session', {method: 'POST', body: {initData: telegramInitData()}})
+      .then(session => { setToken(session.token); onLogin(); })
+      .catch(err => setError(err.status === 403 ? 'Bu Telegram hisobi admin emas. Login va parol bilan kiring.' : 'Serverga ulanib bo‘lmadi.'))
+      .finally(() => setSaving(false));
+  }, []);
   async function submit(event) {
     event.preventDefault();
     setSaving(true);

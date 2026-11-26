@@ -1,3 +1,5 @@
+import {telegramInitData} from './telegram';
+
 const sessionKey = 'kartej-admin-session';
 
 export function getToken() {
@@ -12,6 +14,7 @@ export function setToken(token) {
 export async function api(path, {method = 'GET', body, admin = false, signal, orderToken, binary = false} = {}) {
   const headers = {};
   if (orderToken) headers['X-Order-Token'] = orderToken;
+  if (telegramInitData()) headers['X-Telegram-Init-Data'] = telegramInitData();
   if (admin && getToken()) headers.Authorization = `Bearer ${getToken()}`;
   if (body != null && !(body instanceof FormData)) {
     headers['Content-Type'] = 'application/json';

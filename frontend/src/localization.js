@@ -7,6 +7,9 @@ let language = 'uz';
 try {
   const saved = localStorage.getItem('customer-language');
   if (!admin && Object.hasOwn(languages, saved)) language = saved;
+  // First launch inside Telegram: follow the Telegram app language when we support it.
+  const telegramLanguage = window.Telegram?.WebApp?.initDataUnsafe?.user?.language_code?.slice(0, 2);
+  if (!admin && !saved && Object.hasOwn(languages, telegramLanguage)) language = telegramLanguage;
 } catch {}
 
 export function currentLanguage() { return language; }

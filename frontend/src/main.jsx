@@ -14,6 +14,7 @@ import {api} from './api';
 import Admin from './Admin';
 import ReceiptPayment, {loadTrackedOrders, rememberOrder} from './ReceiptPayment';
 import LocationPicker from './LocationPicker';
+import {syncBackButton, telegramUser} from './telegram';
 
 
 function ContactLinks() {
@@ -96,8 +97,9 @@ function App(){
    };
  }, []);
  const [quantities, setQuantities] = useState(draft.quantities || {});
- const [filter,setFilter]=useState('Barchasi'),[start,setStart]=useState(draft.start || defaultPlaces[0]),[end,setEnd]=useState(draft.end || defaultPlaces[1]),[active,setActive]=useState(null),[date,setDate]=useState(draft.date || ''),[time,setTime]=useState(draft.time || '10:00'),[modal,setModal]=useState(false),[name,setName]=useState(''),[phone,setPhone]=useState(''),[error,setError]=useState(''),[menu,setMenu]=useState(false),[savedOrder,setSavedOrder]=useState(null);
+ const [filter,setFilter]=useState('Barchasi'),[start,setStart]=useState(draft.start || defaultPlaces[0]),[end,setEnd]=useState(draft.end || defaultPlaces[1]),[active,setActive]=useState(null),[date,setDate]=useState(draft.date || ''),[time,setTime]=useState(draft.time || '10:00'),[modal,setModal]=useState(false),[name,setName]=useState(() => [telegramUser()?.first_name, telegramUser()?.last_name].filter(Boolean).join(' ')),[phone,setPhone]=useState(''),[error,setError]=useState(''),[menu,setMenu]=useState(false),[savedOrder,setSavedOrder]=useState(null);
  const dialogRef=useRef(null);
+ useEffect(() => syncBackButton(bookingPage, () => step > 0 ? navigateBooking(step - 1) : navigateHome()), [bookingPage, step]);
  const [scrolled, setScrolled] = useState(false);
  useEffect(() => {
    const update = () => setScrolled(window.scrollY > 24);

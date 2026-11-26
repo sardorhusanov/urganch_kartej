@@ -354,3 +354,6 @@ img[src="/images/malibu-black.jpg"]{object-position:center 82%}
 
 /* Admin keeps the sans heading font. */
 .admin-main h2{font-family:var(--font)!important;font-weight:700;letter-spacing:-.01em}
+
+/* Telegram Mini App: Telegram shows its own title bar and back button. */
+.in-telegram .admin-link{display:none}
