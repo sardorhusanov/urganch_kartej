@@ -1,0 +1,58 @@
+[
+  {
+    "id": "malibu",
+    "name": "Chevrolet Malibu 2 Turbo",
+    "category": "Biznes",
+    "image": "/images/malibu-black.jpg",
+    "detail": "Qora · 3 yo‘lovchi",
+    "tag": "Asosiy tanlov · 2.0 Turbo"
+  },
+  {
+    "id": "tahoe",
+    "name": "Chevrolet Tahoe",
+    "category": "Premium",
+    "image": "/images/tahoe.png",
+    "detail": "SUV · 6 yo‘lovchi",
+    "tag": "Katta kun uchun"
+  },
+  {
+    "id": "traverse",
+    "name": "Chevrolet Traverse",
+    "category": "Biznes",
+    "image": "/images/traverse.png",
+    "detail": "SUV · 6 yo‘lovchi",
+    "tag": "Keng va qulay"
+  },
+  {
+    "id": "equinox",
+    "name": "Chevrolet Equinox",
+    "category": "Komfort",
+    "image": "/images/equinox-2020.png",
+    "detail": "SUV · 4 yo‘lovchi",
+    "tag": "Zamonaviy tanlov"
+  },
+  {
+    "id": "captiva",
+    "name": "Chevrolet Captiva",
+    "category": "Komfort",
+    "image": "/images/captiva.png",
+    "detail": "SUV · 6 yo‘lovchi",
+    "tag": "Yaqinlaringiz bilan"
+  },
+  {
+    "id": "gelik",
+    "name": "Mercedes-Benz G-Class (Gelik)",
+    "category": "Premium",
+    "image": "/images/gelik.jpg",
+    "detail": "SUV · 3 yo‘lovchi",
+    "tag": "O‘ziga xos hashamat"
+  },
+  {
+    "id": "bmw",
+    "name": "BMW 5 Series",
+    "category": "Biznes",
+    "image": "/images/bmw.jpg",
+    "detail": "Sedan · 3 yo‘lovchi",
+    "tag": "Zamonaviy klassika"
+  }
+]

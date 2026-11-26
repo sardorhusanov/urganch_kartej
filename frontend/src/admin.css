@@ -1,0 +1,160 @@
+.admin-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+.admin-main h1 {margin: 0 0 8px; font-size: clamp(30px, 5vw, 46px);}
+.admin-main h2 {font-size: 22px; margin: 0;}
+.admin-local, .admin-empty {color: var(--muted); line-height: 1.6;}
+.admin-empty {padding: 24px 0; margin-bottom: 0;}
+.admin-stats, .admin-fields {display: grid; gap: 16px;}
+.admin-stats {grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 26px 0;}
+.admin-stats > div, .admin-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+}
+.admin-stats > div {display: flex; align-items: center; gap: 14px; font-size: 14px;}
+.admin-stats svg {flex-shrink: 0; color: var(--blue);}
+.admin-stats strong {display: block; margin-top: 4px; font-size: 25px;}
+.admin-tabs {display: flex; gap: 8px; margin-bottom: 16px;}
+.admin-tabs button {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #25466c;
+  background: white;
+}
+.admin-tabs button[aria-pressed="true"] {background: var(--blue); color: white; border-color: var(--blue);}
+.admin-add-car {max-width: 620px;}
+.admin-fields {grid-template-columns: repeat(2, minmax(0, 1fr));}
+.admin-form {display: grid; gap: 18px;}
+.admin-form button {justify-self: start;}
+.admin-main label {display: grid; gap: 7px; font-size: 14px; font-weight: 600; color: #315477;}
+.admin-main input, .admin-main select {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: #102a43;
+  background-color: #f8faff;
+  border: 1px solid #d5e1f0;
+  border-radius: 7px;
+}
+.admin-section-head {display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 16px;}
+.admin-order {border: 1px solid var(--border); border-radius: 10px; margin-top: 12px;}
+.admin-order summary {cursor: pointer; padding: 14px; display: grid; grid-template-columns: minmax(0, 1.4fr) 1fr auto; gap: 12px; align-items: center;}
+.admin-order summary::marker {content: '';}
+.admin-order summary::-webkit-details-marker {display: none;}
+.admin-order summary strong, .admin-order summary small {display: block;}
+.admin-order summary small {color: var(--muted); margin-bottom: 4px;}
+.admin-order summary:focus-visible {outline: 3px solid #75a2ff; outline-offset: 2px;}
+.admin-order[open] summary {background: #f5f8ff; border-radius: 10px 10px 0 0;}
+.payment-status {border-radius: 99px; padding: 5px 10px; font-size: 13px; background: #fff0e6; color: #924322; justify-self: start;}
+.payment-status.partial {background: #fff4d7; color: #805000;}
+.payment-status.paid {background: #e5f5ec; color: #226345;}
+.admin-order-body {padding: 16px;}
+.admin-customer {display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px;}
+.admin-customer a, .admin-location a, .admin-link {color: #2456bb; text-decoration: underline; text-underline-offset: 3px;}
+.admin-location {display: flex; gap: 8px; background: #f5f8ff; padding: 12px; border-radius: 8px; overflow-wrap: anywhere;}
+.admin-location svg {flex-shrink: 0; color: var(--blue);}
+.admin-location small, .admin-location strong, .admin-location a {display: block; margin-bottom: 3px;}
+.admin-location a {font-size: 13px;}
+.admin-prices > div {display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--border); padding: 10px 0;}
+.admin-prices dd {margin: 0; font-weight: 700; text-align: right;}
+.admin-payment {display: flex; flex-wrap: wrap; gap: 12px; align-items: end;}
+.admin-feedback {font-size: 14px; color: #315477; margin-bottom: 0;}
+.admin-vehicles {list-style: none; margin: 12px 0 0; padding: 0;}
+.admin-vehicles > li + li {margin-top: 10px;}
+.admin-vehicles small {display: block; color: var(--muted); margin-top: 4px;}
+.vehicle-placeholder {display: grid; place-items: center; height: 100%; background: #edf3ff; color: #426fbd;}
+.summary-car .vehicle-placeholder {width: 80px; height: 57px; border-radius: 5px; flex-shrink: 0;}
+.admin-link {font-size: 13px;}
+@media (max-width: 700px) {
+  .admin-main {padding: 24px 16px 40px;}
+  .admin-stats {gap: 7px;}
+  .admin-stats > div {display: block; padding: 10px; font-size: 12px;}
+  .admin-stats svg {display: block; margin-bottom: 6px;}
+  .admin-panel {padding: 14px;}
+  .admin-order summary {grid-template-columns: 1fr; gap: 7px;}
+}
+.admin-summary-end {display: flex; align-items: center; gap: 8px;}
+.admin-summary-end svg {color: var(--muted);}
+.admin-order[open] .admin-summary-end svg {transform: rotate(180deg);}
+ .fleet-card {border:1px solid var(--border);border-radius:12px;background:white;}
+.fleet-heading {display:flex;align-items:center;gap:14px;cursor:pointer;padding:14px;list-style:none;}
+.fleet-heading::-webkit-details-marker {display:none;}
+.fleet-heading:focus-visible {outline:3px solid #75a2ff;border-radius:12px;}
+.fleet-thumb {display:grid;place-items:center;flex:none;width:75px;height:50px;border-radius:7px;background:#f0f4fa;overflow:hidden;}
+.fleet-thumb img {display:block;min-width:0;min-height:0;width:100%;height:100%;object-fit:cover;}
+.fleet-name {flex:1;min-width:0;overflow-wrap:anywhere;}
+.fare-count {font-size:13px;background:#edf3ff;color:#355787;border-radius:20px;padding:5px 10px;}
+.fleet-chevron {flex:none;color:#58718d;}
+.fleet-card[open] .fleet-chevron {transform:rotate(180deg);}
+.fleet-body {border-top:1px solid var(--border);padding:18px;}
+.fleet-switch,.fare-actions,.fare-head,.fare-path {display:flex;align-items:center;gap:8px;}
+.fleet-switch {display:inline-flex;background:#eff3f8;padding:4px;border-radius:9px;margin-bottom:20px;}
+.fleet-switch button,.fare-actions button,.fare-head button {display:inline-flex;align-items:center;justify-content:center;gap:7px;}
+.fleet-switch button {background:transparent;border:0;padding:8px 12px;border-radius:6px;color:#435973;font-weight:600;}
+.fleet-switch button[aria-pressed="true"] {background:white;color:#214ea4;box-shadow:0 1px 4px #192f5124;}
+.fare-head {justify-content:space-between;flex-wrap:wrap;}
+.fleet-body h3 {margin:0;font-size:18px;}
+.fare-head .button,.fare-actions .button,.fleet-photo .button {padding:10px 15px;min-height:40px;}
+.fare-list {list-style:none;padding:0;margin:12px 0 0;}
+.fare-list li {display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:20px;border-top:1px solid var(--border);padding:12px 0;}
+.fare-list li:last-child {padding-bottom:0;}
+.fare-path {flex-wrap:wrap;overflow-wrap:anywhere;}
+.fare-path svg {color:#647890;}
+.fare-actions {flex-wrap:wrap;}
+.fare-actions .car-select,.fare-delete {padding:8px 10px;min-height:38px;}
+.fare-delete {border:1px solid var(--border);background:white;color:#a13931;border-radius:6px;}
+.fare-link {border:none;background:transparent;color:#2456bb;padding:7px 0;}
+.fare-editor {max-width:700px;}
+.fare-editor h3 {margin-bottom:15px;}
+.fare-editor h4 {margin:18px 0 6px;}
+.fare-empty {color:var(--muted);line-height:1.5;}
+.fleet-photo {max-width:480px;}
+.fleet-photo img {width:200px;max-height:140px;object-fit:contain;border-radius:8px;}
+@media(max-width:650px) {
+  .fleet-heading {display:grid;grid-template-columns:50px minmax(0,1fr) auto;gap:4px 9px;padding:12px;}
+  .fleet-thumb {grid-row:span 2;width:50px;height:44px;}
+  .fare-count {grid-column:2;justify-self:start;padding:2px 7px;}
+  .fleet-chevron {grid-column:3;grid-row:1 / 3;}
+  .fleet-body {padding:12px;}
+  .fleet-switch {display:flex;flex-wrap:wrap;}
+  .fleet-switch button {padding:7px;font-size:13px;}
+  .fare-list li {grid-template-columns:1fr;gap:8px;}
+  .fare-editor .admin-fields {grid-template-columns:1fr;}
+}
+.admin-login {max-width: 470px; padding-top: 12vh;}
+.admin-header-actions {display: flex; gap: 8px;}
+.admin-refresh {margin-top: 16px;}
+.admin-form input[type="file"] {padding: 8px;}
+.button:disabled {opacity: .6;}
+.admin-order summary strong, .request-id {overflow-wrap: anywhere;}
+@media (max-width: 380px) {
+  .admin-header .brand small {display: none;}
+  .admin-header-actions .header-action {white-space: normal;}
+}
+
+.admin-tabs {flex-wrap: wrap;}
+.admin-map-note {margin: 0;}
+.admin-address-map {height: 260px;}
+.admin-address-actions {display: flex; flex-wrap: wrap; gap: 8px;}
+.admin-car-address-form {padding: 14px; background: #f4f8ff; border-radius: 10px;}
+
+.receipt-review {display: grid; gap: 12px; padding: 16px; margin: 16px 0; background: #f5f8ff; border-radius: 10px;}
+.receipt-review > p {margin: 0;}
+.receipt-review > button {justify-self: start;}
+.receipt-review textarea {width: 100%; resize: vertical; font: inherit; padding: 10px; border: 1px solid var(--border); border-radius: 8px;}
+.receipt-preview {justify-self: start; display: block;}
+.receipt-preview img {display: block; max-width: 100%; max-height: 440px; object-fit: contain; border: 1px solid var(--border); border-radius: 8px;}
+.customer-payment-card {background: white; border: 1px solid var(--border); border-radius: 14px; margin-top: 18px; padding: clamp(16px, 4vw, 28px); max-width: 650px;}
+.customer-payment-head {display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start; gap: 12px;}
+.customer-payment-head small {display: block; color: var(--muted); margin-top: 5px; overflow-wrap: anywhere;}
+.payment-totals {display: flex; gap: 24px; flex-wrap: wrap; padding: 16px 0;}
+.payment-totals strong {display: block;}
+.payment-select,.receipt-file {display: grid; gap: 5px;}
+.payment-select {max-width: 650px; margin-top: 16px;}
+.payment-select select,.receipt-file input {width: 100%; min-width: 0; padding: 8px; border: 1px solid var(--border); border-radius: 6px; background-color: #f4f7fc;}

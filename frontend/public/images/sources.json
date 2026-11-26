@@ -1,0 +1,30 @@
+{
+  "note": "Reference model imagery for the local MVP, not photographs of the actual rental fleet.",
+  "tahoe.png": {
+    "page": "https://chevrolet.uz/tahoe",
+    "image": "https://chevrolet.uz/assets/images/tahoe/colors/01.png"
+  },
+  "traverse.png": {
+    "page": "https://chevrolet.uz/traverse",
+    "image": "https://chevrolet.uz/assets/images/traverse/colors/1.png"
+  },
+  "captiva.png": {
+    "page": "https://chevrolet.uz/captiva",
+    "image": "https://chevrolet.uz/assets/images/captiva/colors/77U.png"
+  },
+  "gelik.jpg": {
+    "page": "https://getrentacar.com/en-US/car-rental/5021037",
+    "image": "https://getrentacar.com/storage/cache/images/960-640-100-fit-88030.jpeg"
+  },
+  "bmw.jpg": {
+    "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=85"
+  },
+  "malibu-black.jpg": {
+    "page": "https://www.olx.uz/transport/legkovye-avtomobili/tashkent/q-chevrolet-malibu-2-turbo-premier/",
+    "image": "https://frankfurt.apollo.olxcdn.com/v1/files/6h682le8binf2-UZ/image;s=1500x1000"
+  },
+  "equinox-2020.png": {
+    "page": "https://www.cars.com/research/chevrolet-equinox-2020/",
+    "image": "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/1a5ee922-94f7-4ecd-95c5-86c3aa35ba03/3d18a7f5-2bfd-4102-9f4c-c123c7984a53.png"
+  }
+}

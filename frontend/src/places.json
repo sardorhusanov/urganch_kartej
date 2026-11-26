@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Urganch",
+    "lat": 41.5506,
+    "lng": 60.6317
+  },
+  {
+    "name": "Xiva",
+    "lat": 41.3783,
+    "lng": 60.3639
+  },
+  {
+    "name": "Xonqa",
+    "lat": 41.4792,
+    "lng": 60.7811
+  },
+  {
+    "name": "Hazorasp",
+    "lat": 41.3194,
+    "lng": 61.0742
+  },
+  {
+    "name": "Bog‘ot",
+    "lat": 41.3658,
+    "lng": 60.8156
+  },
+  {
+    "name": "Gurlan",
+    "lat": 41.8447,
+    "lng": 60.3919
+  },
+  {
+    "name": "Shovot",
+    "lat": 41.6558,
+    "lng": 60.3025
+  },
+  {
+    "name": "Qo‘shko‘pir",
+    "lat": 41.535,
+    "lng": 60.3456
+  },
+  {
+    "name": "Yangibozor",
+    "lat": 41.7314,
+    "lng": 60.5533
+  },
+  {
+    "name": "Yangiariq",
+    "lat": 41.3581,
+    "lng": 60.6044
+  },
+  {
+    "name": "Tuproqqal’a",
+    "lat": 41.2325,
+    "lng": 61.3042
+  }
+]
